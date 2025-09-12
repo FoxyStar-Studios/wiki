@@ -5,6 +5,7 @@
     "wiki:preview": "vitepress preview"
   },
   "dependencies": {
-    "vite": "^7.1.5"
+    "vite": "^7.1.5",
+    "vitepress": "^1.6.4"
   }
 }
