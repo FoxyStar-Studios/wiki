@@ -3,18 +3,15 @@
 layout: home
 
 hero:
-  name: "FoxyStar Studios – Wiki"
-  tagline: Hello, world!
+  name: "Better on Bedrock – Wiki"
+  tagline: Your place for support!
   image:
-    src: /assets/icon-empty.png
-    alt: FoxyStar Studios
+    src: /better-on-bedrock/assets/title.png
+    alt: Better on Bedrock
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Test
+      link: /better-on-bedrock/test
 
 features:
   - title: Feature A
