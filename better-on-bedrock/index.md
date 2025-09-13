@@ -2,6 +2,10 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+## Metadata
+title: "Better on Bedrock"
+description: "The official Better on Bedrock Wiki — documentation, guides, and resources"
+
 hero:
   name: "Better on Bedrock – Wiki"
   tagline: Your place for support!

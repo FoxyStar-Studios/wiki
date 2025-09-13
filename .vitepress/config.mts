@@ -1,16 +1,18 @@
 import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
+const title = "FoxyStar Studios — Wiki";
+const description = "The official FoxyStar Wiki — documentation, guides, and resources for FoxyStar projects";
 export default defineConfig({
     base: "/",
-    title: "FoxyStar Studios — Wiki",
-    description: "The official FoxyStar Wiki — documentation, guides, and resources for FoxyStar projects",
-    
+    title,
+    description,
+
     head: [
         ["link", { rel: "shortcut icon", type: "image/png", href: "/assets/icon-empty.png" }],
 
-        ["meta", { property: "og:title", content: "FoxyStar Studios — Wiki" }],
-        ["meta", { property: "og:description", content: "The official FoxyStar Wiki — documentation, guides, and resources for FoxyStar projects" }],
+        ["meta", { property: "og:title", content: title }],
+        ["meta", { property: "og:description", content: description }],
         ["meta", { property: "og:image", content: "https://wiki.foxystar.net/assets/icon-empty.png" }],
         ["meta", { name: "twitter:card", content: "summary" }],
         ["meta", { name: "twitter:image", content: "https://wiki.foxystar.net/assets/icon-empty.png" }],
