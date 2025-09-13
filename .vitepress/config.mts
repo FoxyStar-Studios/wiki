@@ -24,7 +24,7 @@ export default defineConfig({
             icon = baseUrl.concat("/better-on-bedrock/assets/title.png");
         };
 
-        pageData.frontmatter.head.push(["link", { rel: "shortcut icon", type: "image/png", content: icon }]);
+        pageData.frontmatter.head.push(["link", { rel: "shortcut icon", type: "image/png", href: icon }]);
         pageData.frontmatter.head.push(["meta", { property: "og:image", content: image }]);
         pageData.frontmatter.head.push(["meta", { property: "twitter:image", content: image }]);
     },
