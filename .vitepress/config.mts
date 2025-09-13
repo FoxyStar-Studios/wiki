@@ -5,9 +5,10 @@ const baseUrl = "https://wiki.foxystar.net";
 export default defineConfig({
     base: "/",
     title: "FoxyStar Studios — Wiki",
-    description: "The official FoxyStar Wiki — documentation, guides, and resources for FoxyStar projects",
+    description: "Documentation, guides, and resources for FoxyStar Studios' projects.",
 
     head: [
+        ["meta", { name: "og:type", content: "website" }],
         ["meta", { name: "twitter:card", content: "summary" }],
     ],
     transformPageData(pageData, ctx) {

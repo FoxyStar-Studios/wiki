@@ -1,3 +1,8 @@
+---
+title: "Test Page"
+description: "Meow! Hello, world!"
+---
+
 # Test
 Hello, world!
 

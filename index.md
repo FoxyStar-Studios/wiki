@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "FoxyStar Studios — Wiki"
-  tagline: The official FoxyStar Wiki — documentation, guides, and resources for FoxyStar projects
+  tagline: "Documentation, guides, and resources for FoxyStar Studios' projects."
   image:
     src: /assets/icon-empty.png
     alt: FoxyStar Studios

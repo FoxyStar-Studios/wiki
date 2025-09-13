@@ -1,14 +1,13 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
-
 ## Metadata
 title: "Better on Bedrock"
-description: "The official Better on Bedrock Wiki — documentation, guides, and resources"
+description: "The official Better on Bedrock wiki — documentation, guides, and resources."
 
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
 hero:
-  name: "Better on Bedrock – Wiki"
-  tagline: Your place for support!
+  name: "Better on Bedrock"
+  tagline: "The official Better on Bedrock wiki — documentation, guides, and resources."
   image:
     src: /better-on-bedrock/assets/title.png
     alt: Better on Bedrock
