@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "FoxyStar Studios – Wiki"
-  tagline: Hello, world!
+  name: "FoxyStar Studios — Wiki"
+  tagline: The official FoxyStar Wiki — documentation, guides, and resources for FoxyStar projects
   image:
     src: /assets/icon-empty.png
     alt: FoxyStar Studios
