@@ -16,16 +16,16 @@ export default defineConfig({
         const cleanPath = "/".concat(pageData.relativePath.replace("index.md", '').replace(/\.md$/, ''));
         pageData.frontmatter.head.push(["meta", { property: "og:url", content: baseUrl.concat(cleanPath) }]);
 
-        let image = baseUrl.concat("/assets/icon-empty.png");
-        let icon = baseUrl.concat("/assets/icon.png");
+        let image = baseUrl.concat("/assets/icon.png");
+        let icon = baseUrl.concat("/assets/icon-empty.png");
         if (/^\/better-on-bedrock\//.test(cleanPath)) {
             image = baseUrl.concat("/better-on-bedrock/assets/icon.png");
             icon = baseUrl.concat("/better-on-bedrock/assets/title.png");
         };
 
-        pageData.frontmatter.head.push(["link", { rel: "shortcut icon", type: "image/png", content: image }]);
-        pageData.frontmatter.head.push(["meta", { property: "og:image", content: icon }]);
-        pageData.frontmatter.head.push(["meta", { property: "twitter:image", content: icon }]);
+        pageData.frontmatter.head.push(["link", { rel: "shortcut icon", type: "image/png", content: icon }]);
+        pageData.frontmatter.head.push(["meta", { property: "og:image", content: image }]);
+        pageData.frontmatter.head.push(["meta", { property: "twitter:image", content: image }]);
     },
 
     vite: {
