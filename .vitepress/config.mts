@@ -1,22 +1,33 @@
 import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
-const title = "FoxyStar Studios — Wiki";
-const description = "The official FoxyStar Wiki — documentation, guides, and resources for FoxyStar projects";
+const baseUrl = "https://wiki.foxystar.net";
 export default defineConfig({
     base: "/",
-    title,
-    description,
+    title: "FoxyStar Studios — Wiki",
+    description: "The official FoxyStar Wiki — documentation, guides, and resources for FoxyStar projects",
 
     head: [
-        ["link", { rel: "shortcut icon", type: "image/png", href: "/assets/icon-empty.png" }],
-
-        ["meta", { property: "og:title", content: title }],
-        ["meta", { property: "og:description", content: description }],
-        ["meta", { property: "og:image", content: "https://wiki.foxystar.net/assets/icon-empty.png" }],
         ["meta", { name: "twitter:card", content: "summary" }],
-        ["meta", { name: "twitter:image", content: "https://wiki.foxystar.net/assets/icon-empty.png" }],
     ],
+    transformPageData(pageData, ctx) {
+        pageData.frontmatter.head ??= [];
+
+        const cleanPath = "/".concat(pageData.relativePath.replace("index.md", '').replace(/\.md$/, ''));
+        pageData.frontmatter.head.push(["meta", { property: "og:url", content: baseUrl.concat(cleanPath) }]);
+
+        let image = baseUrl.concat("/assets/icon-empty.png");
+        let icon = baseUrl.concat("/assets/icon.png");
+        if (/^\/better-on-bedrock\//.test(cleanPath)) {
+            image = baseUrl.concat("/better-on-bedrock/assets/icon.png");
+            icon = baseUrl.concat("/better-on-bedrock/assets/title.png");
+        };
+
+        pageData.frontmatter.head.push(["link", { rel: "shortcut icon", type: "image/png", content: image }]);
+        pageData.frontmatter.head.push(["meta", { property: "og:image", content: icon }]);
+        pageData.frontmatter.head.push(["meta", { property: "twitter:image", content: icon }]);
+    },
+
     vite: {
         publicDir: ".vitepress/public"
     },
@@ -59,6 +70,7 @@ export default defineConfig({
             ]
         },
 
+        externalLinkIcon: true,
         lastUpdated: {
             text: "Updated at",
             formatOptions: {
