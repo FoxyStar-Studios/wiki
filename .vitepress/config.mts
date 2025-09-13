@@ -2,8 +2,13 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: "/",
     title: "FoxyStar Studios – Wiki",
     description: "FoxyStar Studios' Official wiki",
+    
+    vite: {
+        publicDir: ".vitepress/public"
+    },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: "/assets/icon.png",
