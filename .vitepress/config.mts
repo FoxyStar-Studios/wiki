@@ -8,6 +8,7 @@ export default defineConfig({
     description: "Documentation, guides, and resources for FoxyStar Studios' projects.",
 
     head: [
+        ["meta", { name: "viewport", content: "width=device-width, initial-scale=1.0, viewport-fit=cover" }],
         ["meta", { name: "og:type", content: "website" }],
         ["meta", { name: "twitter:card", content: "summary" }],
     ],
@@ -29,6 +30,7 @@ export default defineConfig({
         pageData.frontmatter.head.push(["meta", { property: "twitter:image", content: image }]);
     },
 
+    srcExclude: [ "**/README.md" ],
     vite: {
         publicDir: ".vitepress/public"
     },
@@ -39,6 +41,11 @@ export default defineConfig({
             { icon: "github", link: "https://github.com/FoxyStar-Studios" },
             { icon: "discord", link: "https://discord.gg/better-on-bedrock" }
         ],
+
+        editLink: {
+            pattern: 'https://github.com/FoxyStar-Studios/wiki/edit/main/:path',
+            text: "Suggest changes to this page",
+        },
         search: {
             provider: "local"
         },
@@ -68,6 +75,18 @@ export default defineConfig({
                         
                     ],
                 }
+            ],
+            "/better-on-bedrock/changelogs": [
+                {
+                    text: "Changelogs",
+                    items: [
+                        {
+                            items: [
+                                { text: "Better on Bedrock — 1.2.0", link: "/better-on-bedrock/changelogs/1.2.0", },
+                            ]
+                        }
+                    ],
+                }
             ]
         },
 
@@ -81,7 +100,7 @@ export default defineConfig({
         },
         footer: {
             message: "",
-            copyright: "Copyright © 2025-present FoxyStar Studios"
+            copyright: "Copyright © 2025-present FoxyStar Studios™"
         },
     },
 });

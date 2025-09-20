@@ -15,13 +15,22 @@ hero:
     - theme: brand
       text: Test
       link: /better-on-bedrock/test
+    - theme: alt
+      text: Changelogs
+      link: /better-on-bedrock/changelogs/1.2.0
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: ❓
+    title: What is this?
+    details: A place where you can learn about features available in the Add-On.
+  - icon: 🪲
+    title: Found a bug?
+    details: Submit a bug report in our Discord server!
+    link: https://discord.gg/better-on-bedrock
+  - icon: ✨
+    title: Feel like something is missing?
+    details:  Feel free to contribute!
+    link: https://github.com/FoxyStar-Studios/wiki
+    linkText: GitHub repository
 ---
 
