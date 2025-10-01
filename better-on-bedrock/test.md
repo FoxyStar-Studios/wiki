@@ -1,6 +1,6 @@
 ---
 title: "Test Page"
-description: "Meow! Hello, world!"
+description: "Hello, world!"
 ---
 
 # Test

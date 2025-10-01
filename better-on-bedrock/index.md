@@ -17,7 +17,7 @@ hero:
       link: /better-on-bedrock/test
     - theme: alt
       text: Changelogs
-      link: /better-on-bedrock/changelogs/1.2.0
+      link: /better-on-bedrock/changelogs/1.1.4
 
 features:
   - icon: ❓

@@ -82,7 +82,8 @@ export default defineConfig({
                     items: [
                         {
                             items: [
-                                { text: "Better on Bedrock — 1.2.0", link: "/better-on-bedrock/changelogs/1.2.0", },
+                                //{ text: "Better on Bedrock — 1.2.0", link: "/better-on-bedrock/changelogs/1.2.0", },
+                                { text: "Better on Bedrock — 1.1.4", link: "/better-on-bedrock/changelogs/1.1.4", },
                             ]
                         }
                     ],
