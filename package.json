@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "vite": "^7.1.5",
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.30"
   }
 }

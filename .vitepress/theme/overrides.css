@@ -1,0 +1,28 @@
+/* Expand the master layout shell to 100% of the screen. */
+body.wide-content {
+    --vp-layout-max-width: 100% !important;
+    --vp-content-width: 100% !important;
+}
+
+/* Remove all structural bottlenecks from the middle column */
+body.wide-content .VPDoc .container,
+body.wide-content .VPDoc .content,
+body.wide-content .VPDoc .content-container {
+    max-width: 100% !important;
+}
+
+/* Add breathing room ONLY on desktop and tablets */
+@media (min-width: 768px) {
+    body.wide-content .VPDoc .content-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+/* Keeps the text width capped on ultra-wide screens */
+/*@media (min-width: 1400px) {
+    body.wide-content .vp-doc {
+        max-width: 1400px;
+        margin: 0 auto; 
+    }
+}*/
